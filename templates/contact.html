@@ -1,4 +1,4 @@
-<html lang="fr">
+<!-- <html lang="fr">
 
 <head>
     <meta charset="UTF-8">
@@ -20,10 +20,15 @@
         <li style="display: inline-block; padding: 10px 20px;">
             <a href="/contact/">Contact</a>
         </li>
-    </ul>
+    </ul> -->
 
-    <h1>contactez nous</h1>
+{% extends 'template_base.html' %}
 
-</body>
+{% block titre %}page de contact{% endblock %}
+{% block contenu %}
+<h1>contactez nous</h1>
+{% endblock %}
 
-</html>
+<!-- </body>
+
+</html> -->

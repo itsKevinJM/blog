@@ -1,34 +1,28 @@
-<!-- <html lang="fr">
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Page d'accueil</title>
+    <title>{% block titre %}{% endblock %}</title>
 </head>
 
 <body>
     <ul style="list-style: none">
         <li style="display: inline-block; padding: 10px 20px;">
-            <a href="/">Accueil</a>
+            <a href="{% url 'home' %}">Accueil</a>
         </li>
 
         <li style="display: inline-block; padding: 10px 20px;">
-            <a href="/articles/">Articles</a>
+            <a href="{% url 'articles' %}">Articles</a>
         </li>
 
         <li style="display: inline-block; padding: 10px 20px;">
-            <a href="/contact/">Contact</a>
+            <a href="{% url 'contact' %}">Contact</a>
         </li>
-    </ul> -->
+    </ul>
 
-{% extends 'template_base.html' %}
+    {% block contenu %} {% endblock %}
+</body>
 
-{% block titre %}Page d'accueil{% endblock %}
-{% block contenu %}
-<h1>Bienvenue</h1>
-{% endblock %}
-
-<!-- </body>
-
-</html> -->
+</html>
